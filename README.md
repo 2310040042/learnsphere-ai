@@ -1,3 +1,25 @@
+learnsphere-ai
+
+Minimal README for the learnsphere-ai project.
+
+## Setup
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the dev server:
+
+```bash
+npm run dev
+```
+
+## Notes
+
+- Next.js app located under the `app/` directory.
+- See `package.json` for scripts.
 # LearnSphere AI — KLH Hackathon 2026
 
 LearnSphere AI converts uploaded study materials into an interactive learning assistant: PDF upload, AI chat, summarization, quiz generation, and personalized recommendations.
