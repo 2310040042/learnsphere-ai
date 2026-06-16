@@ -1,3 +1,26 @@
+# LearnSphere AI — KLH Hackathon 2026
+
+LearnSphere AI converts uploaded study materials into an interactive learning assistant: PDF upload, AI chat, summarization, quiz generation, and personalized recommendations.
+
+Quick start
+
+- Install: `npm install`
+- Dev: `npm run dev`
+- Configure env (copy `.env.local.example` to `.env.local`) and set `OPENAI_API_KEY` for AI features.
+
+APIs
+
+- `POST /api/extract` — PDF upload & text extraction (server-side parsing)
+- `POST /api/chat` — chat against uploaded materials (RAG pending)
+- `POST /api/summarize` — summarize text or document
+- `POST /api/quiz` — generate quiz questions from text
+- `POST /api/recommendations` — generate study recommendations
+
+Docs: see `docs/` for architecture and workflow.
+
+Notes
+
+- This repo contains minimal server endpoints that call OpenAI when `OPENAI_API_KEY` is set; otherwise endpoints return deterministic fallbacks for local testing.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
